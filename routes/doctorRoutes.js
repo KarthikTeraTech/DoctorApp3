@@ -25,7 +25,7 @@ doctorRouter.post("/getDoctorDetails", authorizeDoctor, async(req, res) => {
                     return res.json({success:false, msg:"Your details are not available"})
                 }
             })
-        } 
+        }
         catch (error) {
             return res.json({success:false, msg:"Internal Server Error Occurred"})
         }
